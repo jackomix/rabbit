@@ -6,7 +6,7 @@ function begin() {
     var itemName;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&format=json&list=random&continue=-%7C%7C&redirects=1&utf8=1&formatversion=2&rnnamespace=0", true);
+    xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&list=random&continue=-%7C%7C&redirects=1&utf8=1&formatversion=2&rnnamespace=0", true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var response = JSON.parse(xhr.responseText);
@@ -21,7 +21,7 @@ function begin() {
 
 function getContents(itemName) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages%7Clinks&piprop=original&pllimit=500&redirects=1&utf8=1&formatversion=2&exsentences=2&exintro=1&explaintext=1&titles=" + encodeURIComponent(itemName), true);
+    xhr.open("GET", "https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=extracts%7Cpageimages%7Clinks&piprop=original&pllimit=500&redirects=1&utf8=1&formatversion=2&exsentences=2&exintro=1&explaintext=1&titles=" + encodeURIComponent(itemName), true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var response = JSON.parse(xhr.responseText);
