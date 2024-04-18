@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>rabbit</title>
+</head>
+<body>
+    <h1 class="logo">rabbit</h1>
+    <button id="beginButton" onclick="begin()">jump</button>
+    <hr>
+    <div id="storyContainer"></div>
+
+    <div id="template" class="hidden">
+        <div class="item">
+            <div class="itemBox">
+                <h1 id="itemNameLabel">Item Name</h1>
+                <p id="itemDescription">Item Description</p>
+            </div>
+            <h1 class="transition">↑</h1>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="retex.js"></script>
+</body>
+</html>

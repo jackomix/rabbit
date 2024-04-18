@@ -1,0 +1,52 @@
+:root {
+    --bg: #1f1f1f;
+    --c: #e9e9e9;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--c);
+}
+
+.logo {
+    font-size: 64pt;
+    margin: 0;
+    font-style: italic;
+}
+
+button {
+    min-width: 200pt;
+    font-size: 32pt;
+    margin: 0;
+}
+
+hr {
+    margin: 32pt;
+}
+
+.hidden {
+    display: none;
+}
+
+.itemBox {
+    margin: auto;
+    margin-top: 12pt;
+    padding: 16pt;
+    width: 325pt;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 4pt solid #ff0000;
+    box-shadow: 0 0 16pt #ff0000, inset 0 0 8pt var(--bg);
+    text-align: left;
+}
+.transition {
+    margin: 8pt 0 24pt 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 64pt;
+    opacity: 25%;
+    user-select: none;
+}

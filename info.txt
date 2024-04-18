@@ -1,0 +1,5 @@
+https://en.wikipedia.org/w/api.php?action=query&origin=*&prop=extracts&format=json&exintro=&generator=random
+https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&prop=revisions%7Cimages&rvprop=content
+
+This gets completely random stuff from Wikipedia. Articles, random users, lists, images, etc.
+
